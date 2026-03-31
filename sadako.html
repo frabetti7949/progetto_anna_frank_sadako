@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadako Sasaki | Il Volo delle Gru</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #3d6a7f; --bg: #fdfcf9; }
+        body { font-family: 'Montserrat', sans-serif; background: var(--bg); line-height: 1.8; color: #1a1a1a; margin: 0; }
+        
+        
+        nav { 
+            padding: 1.5rem 5%; 
+            border-bottom: 1px solid #eee; 
+            background: white; 
+            position: sticky; 
+            top: 0; 
+            display: flex; 
+            justify-content: space-between; 
+            z-index: 100;
+        }
+        nav a { text-decoration: none; color: #1a1a1a; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+        nav a:hover { color: var(--accent); }
+
+        article { max-width: 800px; margin: 4rem auto; padding: 0 2rem; }
+        
+        h1 { font-family: 'Playfair Display'; font-size: 3.5rem; color: var(--accent); margin-bottom: 0.5rem; text-align: left; }
+        h2 { font-family: 'Playfair Display'; margin-top: 2.5rem; color: #333; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
+        
+        .quote { font-family: 'Playfair Display'; font-size: 1.8rem; font-style: italic; text-align: center; margin: 3rem 0; color: #555; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 2.5rem 0; }
+        .hero-img { width: 100%; height: 400px; object-fit: contain; margin: 2rem 0; border-radius: 2px; }
+        
+        
+        .book-box { 
+            border: 1px solid #ddd; 
+            padding: 2.5rem; 
+            background: white; 
+            margin-top: 3rem; 
+            border-left: 5px solid var(--accent);
+            display: flex; 
+            gap: 2rem; 
+            align-items: flex-start; 
+        }
+
+        .book-cover-spacer {
+            flex-shrink: 0; 
+            width: auto; 
+            height: auto; 
+            background-color: #eee; 
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: #999;
+        
+        }
+
+        .book-content {
+            flex: 1; 
+        }
+
+        
+        @media (max-width: 600px) {
+            .book-box {
+                flex-direction: column; 
+                align-items: center;
+                text-align: center;
+            }
+            .book-cover-spacer {
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">← Torna alla Home</a>
+        <a href="anna.html">Anna Frank →</a>
+    </nav>
+
+    <article>
+        <h1>Sadako Sasaki</h1>
+        <p style="font-style: italic; color: #666; margin-bottom: 2rem;">Mille gru di carta per una preghiera universale.</p>
+        
+        <h2>La Vita</h2>
+        <p>Sadako Sasaki nasce ad Hiroshima nel 1943. All'età di soli due anni, il 6 agosto 1945, si trova a circa due chilometri dall'esplosione della bomba atomica. Sopravvissuta all'impatto, cresce come una bambina atletica e vivace, finché nel 1954 i primi segni della leucemia — nota come "la malattia della bomba" — iniziano a manifestarsi.</p>
+        
+        <div class="quote">"Scriverò pace sulle tue ali, e tu volerai in tutto il mondo."</div>
+
+        <h2>Le Mille Gru</h2>
+        <p>Mentre è ricoverata in ospedale, Sadako viene a conoscenza della leggenda delle mille gru: chiunque riesca a piegare mille origami a forma di gru vedrà esaudito il proprio desiderio. Sadako inizia a piegare gru freneticamente, pregando per la propria guarigione e, col tempo, per la pace del mondo intero. Muore nell'ottobre del 1955.</p>
+
+        <img src="Sadako_Sasaki3.jpeg" class="hero-img" alt="Hiroshima Monument">
+
+        <h2>L'Eredità</h2>
+        <p>È oggi l'icona mondiale del disarmo nucleare. Al Children's Peace Monument di Hiroshima, milioni di gru colorate arrivano ogni anno da ogni parte del pianeta in suo onore, portando avanti il suo grido: <b>"Pace nel mondo"</b>.</p>
+
+        <div class="book-box">
+            <div class="book-cover-spacer">
+                <img src="sadako_graphic_novel.jpg">Copertina
+            </div>
+            <div class="book-content">
+                <h3 style="font-family: 'Playfair Display'; font-size: 1.6rem; margin-bottom: 1rem;">"Mille gru per un desiderio"</h3>
+                <p>La graphic novel di <strong>Johanna Hohnhold</strong> (sottotitolo "Mille gru per un desiderio") ripercorre con estrema delicatezza la storia di Sadako. L'opera è fondamentale per comprendere come un piccolo gesto — piegare un foglio di carta — possa diventare un potente strumento di speranza e consapevolezza storica.</p>
+            </div>
+        </div>
+    </article>
+</body>
+</html>

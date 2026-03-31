@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstract del Progetto | Voci nel Silenzio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #fdfcf9; --text: #1a1a1a; --line: #e0ddd5; --accent: #555; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background: var(--bg); 
+            color: var(--text); 
+            line-height: 1.8;
+        }
+
+        /* Navigazione */
+        nav { 
+            padding: 1.5rem 5%; 
+            border-bottom: 1px solid #eee; 
+            background: white; 
+            position: sticky; 
+            top: 0; 
+            display: flex; 
+            justify-content: space-between; 
+            z-index: 100;
+        }
+        nav a { text-decoration: none; color: #1a1a1a; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        header {
+            padding: 5rem 10% 2rem;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display';
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-meta {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #888;
+            margin-bottom: 3rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto 5rem;
+            padding: 0 2rem;
+        }
+
+        .abstract-section {
+            margin-bottom: 3rem;
+        }
+
+        .abstract-section h2 {
+            font-family: 'Playfair Display';
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+            border-bottom: 1px solid var(--line);
+            display: inline-block;
+            padding-right: 2rem;
+        }
+
+        .abstract-section p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background: white;
+            border: 1px solid var(--line);
+            padding: 2.5rem;
+            margin: 4rem 0;
+            position: relative;
+        }
+
+        .highlight-box::after {
+            content: "SINTESI CRITICA";
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: var(--text);
+            color: white;
+            padding: 2px 12px;
+            font-size: 0.6rem;
+            letter-spacing: 2px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem;
+            font-size: 0.7rem;
+            color: #aaa;
+            letter-spacing: 2px;
+            border-top: 1px solid var(--line);
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">← Torna alla Home</a>
+        <span style="font-size: 0.7rem; color: #ccc;">DOCUMENTAZIONE PROGETTO</span>
+    </nav>
+
+    <header>
+        <p class="project-meta">Lavoro di Gruppo Coordinato | A.S. 2025/2026</p>
+        <h1>Voci nel Silenzio</h1>
+        <p style="font-style: italic; color: #555;">Dialogo tra Memoria e Speranza attraverso le figure di Anna Frank e Sadako Sasaki.</p>
+    </header>
+
+    <main>
+        <section class="abstract-section">
+            <h2>Introduzione</h2>
+            <p>Il presente progetto, sviluppato attraverso il lavoro collaborativo in gruppi, si propone di analizzare e mettere in relazione le figure di Anna Frank e Sadako Sasaki. Nonostante la distanza geografica e culturale — l'Europa della Shoah e il Giappone dell'era atomica — entrambe le protagoniste incarnano la resistenza dell'infanzia di fronte alla brutalità dei conflitti prodotti dagli adulti nel XX secolo.</p>
+        </section>
+
+        <section class="abstract-section">
+            <h2>Obiettivi</h2>
+            <p>L'obiettivo primario è la creazione di un memoriale digitale che non si limiti alla cronaca storica, ma che ne conservi l'eredità emotiva e civile. Attraverso lo studio dei documenti (il Diario di Anna) e delle testimonianze simboliche (le Mille Gru di Sadako e la graphic novel di Johanna Hohnhold), il gruppo ha lavorato per restituire dignità e voce a due percorsi di vita interrotti, ma rimasti immortali nel messaggio di pace.</p>
+        </section>
+
+        <div class="highlight-box">
+            <p><em>"Voci nel Silenzio si configura come un esercizio di memoria attiva, promuovendo i valori del disarmo, della tolleranza e della responsabilità individuale nella costruzione di un futuro privo di violenza."</em></p>
+        </div>
+
+        <section class="abstract-section">
+            <h2>Metodologia</h2>
+            <p>Il lavoro è stato suddiviso in fasi di ricerca bibliografica, selezione iconografica e implementazione tecnica. Particolare attenzione è stata rivolta al design dell'esperienza utente, scegliendo un'estetica minimale capace di favorire la riflessione. L'integrazione di risorse multimediali, come lo zoom sulla Casa Museo di Amsterdam e l'analisi del linguaggio del fumetto contemporaneo, permette di connettere il rigore storico con i nuovi linguaggi della comunicazione digitale.</p>
+        </section>
+
+        <section class="abstract-section" style="text-align: center; margin-top: 4rem;">
+            <p style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Componenti del Gruppo</p>
+            <p style="color: #777;">Riccardo Frabetti, Riccardo Breda, Leo Bertolani, Matteo Portacci</p>
+        </section>
+    </main>
+
+    <footer>
+        PROGETTO SCOLASTICO | MEMORIA ATTIVA 2026
+    </footer>
+
+</body>
+</html>
